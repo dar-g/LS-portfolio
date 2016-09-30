@@ -1,5 +1,9 @@
+$font-family-title: 'bernier_regularregular';
+$font-simple-text: 'robotoregular';
+
 body {
   margin: 0;
+  font-family: $font-simple-text;
 }
 
-@import 'common/greating';
+@import 'common/fonts';
