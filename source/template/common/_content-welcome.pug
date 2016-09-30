@@ -1,0 +1,44 @@
+.content-welcome.authorization
+
+	include _about-author-block
+	include _socials
+	
+	nav.welcome-nav
+		ul.welcome-nav-list
+			li.welcome-nav-item
+				a.welcome-nav__link(href="/assets/works.html").portfolio-link Мои работы
+			li.welcome-nav-item
+				a.welcome-nav__link(href="/assets/about.html").about-link Обо мне
+			li.welcome-nav-item
+				a.welcome-nav__link(href="/assets/blog.html").blog-link Блог
+
+	.authorization__wrapper
+		.authorization-title авторизуйтесь
+		form.authorization-form(method="post")
+			.authorization-login
+				input.authorization-login__input(type="text" 
+					id="login" 
+					placeholder="Логин")
+			.authorization-password
+				input.authorization-password__input(type="password"
+					id="password"
+					placeholder="Пароль")
+			.authorization-check
+				input.authorization-check__checkbox(type="checkbox" 
+					id="authorization-checkbox")
+				label(for="authorization-checkbox") Я человек
+			.authorization-radio
+				.authorization-radio__question
+					p.authorization-radio__question-text Вы точно не робот?
+				input.authorization-radio__input#radio-yes(type="radio"
+					name="is-robot")
+				label(for="radio-yes") Да
+				input.authorization-radio__input#radio-unsure(type="radio"
+					name="is-robot")
+				label(for="radio-unsure") Не уверен
+
+			.authorization-btn
+				button.authorization-btn__to-main(type="button") На главную
+				button.authorization-btn__enter(type="submit") Войти
+
+
