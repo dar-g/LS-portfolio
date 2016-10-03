@@ -1,0 +1,45 @@
+.about-widget {
+	&__name {
+		color: $dark-grey;
+		font-size: $title-size-text;
+	}
+	&__title {
+		color: $dark-grey;
+	}
+
+	&__navigation {
+		position: absolute;
+		bottom: -16px;
+		left: -40px;
+	}
+	&__navigation-item {
+		display: inline-block;
+		background: $green;
+		opacity: .7;
+		margin-right: -4px;
+		box-sizing: border-box;
+		&:hover {
+			background: rgba(0, 150, 136, .7)
+		}
+		&:first-child {
+			width: 150px;
+			border-radius: 0 0 0 $brad;
+			border-right: 2px solid #fff;
+		}
+		&:nth-child(2){
+			width: 125px;
+			border-radius: 0px;
+			border-right: 2px solid #fff;
+		}
+		&:nth-child(3) {
+			width: 105px;
+			border-radius: 0 0 $brad 0;
+		}
+	}
+	&__navigation-link {
+		height: 45px;
+		color: #fff;
+		font-size: $size-simple-text;
+		line-height: 45px;
+	}
+}

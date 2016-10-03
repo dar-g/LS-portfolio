@@ -1,0 +1,46 @@
+.main-page-widget-container-wrapper
+	.main-page-widget-container
+		.main-page-widget-container--item.about-widget
+			.about-widget__avatar
+				include _avatar
+			p.about-widget__name Дарья Горяная
+			p.about-widget__title Личный сайт веб-разработчика
+			include _socials-gr
+			
+			ul.about-widget__navigation
+				li.about-widget__navigation-item
+					a.about-widget__navigation-link(href="/works.html").portfolio-link Мои работы
+				li.about-widget__navigation-item
+					a.about-widget__navigation-link(href="/about.html").about-link Обо мне
+				li.about-widget__navigation-item
+					a.about-widget__navigation-link(href="/blog.html").blog-link Блог
+
+		.main-page-widget-container--item.authorization-widget
+			.authorization__wrapper
+				.authorization-title авторизуйтесь
+				form.authorization-form(method="post")
+					.authorization-login
+						input.authorization-login__input(type="text" 
+							id="login" 
+							placeholder="Логин")
+					.authorization-password
+						input.authorization-password__input(type="password"
+							id="password"
+							placeholder="Пароль")
+					.authorization-check
+						input.authorization-check__checkbox(type="checkbox" 
+							id="authorization-checkbox")
+						label(for="authorization-checkbox") Я человек
+					.authorization-radio
+						.authorization-radio__question
+							p.authorization-radio__question-text Вы точно не робот?
+						input.authorization-radio__input#radio-yes(type="radio"
+							name="is-robot")
+						label(for="radio-yes") Да
+						input.authorization-radio__input#radio-unsure(type="radio"
+							name="is-robot")
+						label(for="radio-unsure") Не уверен
+
+					.authorization-btn
+						button.authorization-btn__to-main(type="button") На главную
+						button.authorization-btn__enter(type="submit") Войти

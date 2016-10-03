@@ -1,0 +1,10 @@
+.avatar {
+	display: inline-block;
+	width: 141px;
+	height: 141px;
+	border-radius: 50% 50%;
+	overflow: hidden;
+	&__photo {
+		width: 100%;
+	}
+}

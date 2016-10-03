@@ -1,9 +1,9 @@
-extends ../_template
+extends ../_html-head-body
 
 block variables
-  - var title = 'Welcome page'
+	- var title = 'Welcome page'
 
 block content
-  include ../common/_header-welcome
-  include ../common/_content-welcome
-  include ../common/_footer-welcome
+	include ../common/_main-page-widget-container
+	include ../common/_main-page-authorization-button
+	include ../common/_main-page-footer

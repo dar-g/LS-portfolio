@@ -1,0 +1,28 @@
+.main-page-widget-container-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+	&:before {
+		content: "";
+		height: 100%;
+		width: 0px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+.main-page-widget-container {
+		display: inline-block;
+		vertical-align: middle;
+	&--item {	
+		width: 380px;
+		height: 395px;
+		background-color: rgba(252, 252, 252, .8);
+		border-radius: $brad;
+		text-align: center;
+		padding-top: 40px;
+		position: relative;
+	}
+}

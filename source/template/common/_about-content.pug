@@ -1,0 +1,66 @@
+.background-text__portfolio.icon-portfolio_header
+.about-content__container
+	include ../common/_avatar
+	p.about-content__name Дарья Горяная
+	p.about-content__title Личный сайт веб-разработчика
+a.about-content__arrow-down.icon.icon-arrow_down.icon-arrow_down-hover
+
+// TRIANGLE
+.about-content__triangle
+	svg.triangle-svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
+		polygon.triangle-svg-left(points='0,0   0,86   500.8,86   500.8,75.5')
+		polygon.triangle-svg-right(points='1000,0   1000,86   500,86   500,75.5')
+
+section.content-about.clearfix
+	.content-about-left
+		.big-title__about.icon-about_header
+		.big-title обо мне
+		.content-about-left__contents
+			.content-about-left__photoframe
+				img.content-about-left__photo(src="/assets/img/photo-author_about.jpg"
+					alt="This is author's photo")
+			.small-title кто я
+			.descr
+				p.descr-p Я веб разработчик из N. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+				p.descr-p Этот сайт я сделала в рамках обучения в школе оналйн образования LoftSchool.
+
+	.content-about-right
+		.small-title чем я могу быть вам полезна
+		.descr
+			p.descr-p Больше всего меня привлекает Frontend разработка, но я также знакома и могу решать не сложные задачи на Backend. Но давайте по порядку.
+
+		.skills-main-block
+			ul.skills-main-list
+				li.skills-main-list__item FrontEnd
+					ul.skill-front__list
+						li.skill-front__item HTML5
+						li.skill-front__item CSS3
+						li.skill-front__item JavaScript & jQuery
+				li.skills-main-list__item BackEnd
+					ul.skill-back__list
+						li.skill-back__item PHP
+						li.skill-back__item mySQL
+						li.skill-back__item Node.js & npm
+						li.skill-back__item MongoDB
+				li.skills-main-list__item Workflow
+					ul.skill-workflow__list
+						li.skill-workflow__item Git
+						li.skill-workflow__item Gulp
+						li.skill-workflow__item Bower
+						
+section.map#map
+	address.contacts-block
+		.small-title контакты
+		ul.contacts__list
+			li.contacts__item
+				a.contacts__link(href="skype:daria.goriana?call") daria.goriana
+			li.contacts__item
+				a.contacts__link(href="mail:goriana.d@gmail.com") goriana.d@gmail.com
+			li.contacts__item
+				a.contacts__link(href="tel:380991234567") +38 099 123 45 67
+			li.contacts__item
+				a.contacts__link(href="#") г.Киев, ул.Михайловская, д.17/2
+
+
+
+

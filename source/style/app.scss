@@ -1,9 +1,40 @@
-$font-family-title: 'bernier_regularregular';
-$font-simple-text: 'robotoregular';
+@import 'common/var';
+@import 'common/fonts';
+@import 'common/sprite';
+@import 'common/clearfix';
 
-body {
-  margin: 0;
-  font-family: $font-simple-text;
+/* BEM Blocks */
+@import 'common/blocks/avatar';
+
+/* Main Page*/
+@import 'common/blocks/main-page-authorization-button';
+@import 'common/blocks/main-page-widget-container';
+@import 'common/blocks/about-widget';
+@import 'common/blocks/authorization-widget';
+@import 'common/blocks/main-page-footer';
+
+/* About Page */
+@import 'common/about';
+
+html {
+	position: relative;
+    min-height: 100%;
+    background: url(/assets/img/mountain-bg_01.jpg) 0 0 no-repeat;
+    background-size: cover;
 }
 
-@import 'common/fonts';
+body {
+	font-family: $font-simple-text;
+	font-size: 16px;
+}
+
+ul {
+	list-style: none;
+}
+
+a, button {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+

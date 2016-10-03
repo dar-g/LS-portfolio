@@ -1,0 +1,180 @@
+.socials-list{
+  padding-left: 0;
+    .socials-item{
+      display: inline-block;
+        .icon {
+          display: inline-block;
+          margin: 20px 10px 0;
+        }
+    }
+}
+
+.icon-about_header {
+  background-image: url(/assets/img/sprite.png);
+  background-position: 0px -313px;
+  width: 357px;
+  height: 125px;
+}
+.icon-arrow_down-hover:hover {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -771px -313px;
+  width: 26px;
+  height: 16px;
+}
+.icon-arrow_down {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -745px -313px;
+  width: 26px;
+  height: 16px;
+}
+.icon-checked {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -387px -348px;
+  width: 21px;
+  height: 20px;
+}
+.icon-envelope {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -429px -348px;
+  width: 23px;
+  height: 17px;
+}
+.icon-github-gr {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -421px -313px;
+  width: 26px;
+  height: 22px;
+}
+.icon-github-hover-gr:hover {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -447px -313px;
+  width: 26px;
+  height: 22px;
+}
+.icon-github {
+  display: inline-block;
+  background-image: url(/assets/img/sprite.png);
+  background-position: -473px -313px;
+  width: 26px;
+  height: 22px;
+}
+.icon-github_hover:hover {
+  display: inline-block;
+  background-image: url(/assets/img/sprite.png);
+  background-position: -499px -313px;
+  width: 26px;
+  height: 22px;
+}
+.icon-hamburger {
+  display: inline-block;
+  background-image: url(/assets/img/sprite.png);
+  background-position: -357px -313px;
+  width: 40px;
+  height: 35px;
+}
+.icon-in-gr {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -549px -313px;
+  width: 24px;
+  height: 22px;
+}
+.icon-in {
+  display: inline-block;
+  background-image: url(/assets/img/sprite.png);
+  background-position: -573px -313px;
+  width: 24px;
+  height: 22px;
+}
+.icon-in_hover-gr:hover {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -597px -313px;
+  width: 24px;
+  height: 22px;
+}
+.icon-in_hover:hover {
+  display: inline-block;
+  background-image: url(/assets/img/sprite.png);
+  background-position: -525px -313px;
+  width: 24px;
+  height: 22px;
+}
+.icon-key {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -452px -348px;
+  width: 18px;
+  height: 17px;
+}
+.icon-login-has-input {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -500px -348px;
+  width: 15px;
+  height: 17px;
+}
+.icon-login-no-input {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -485px -348px;
+  width: 15px;
+  height: 17px;
+}
+.icon-login {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -470px -348px;
+  width: 15px;
+  height: 17px;
+}
+.icon-map_marker {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -357px -348px;
+  width: 30px;
+  height: 40px;
+}
+.icon-phone {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -387px -368px;
+  width: 19px;
+  height: 18px;
+}
+.icon-portfolio_header {
+  background-image: url(/assets/img/sprite.png);
+  background-position: 0px 0px;
+  width: 1176px;
+  height: 313px;
+}
+.icon-skype {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -397px -313px;
+  width: 24px;
+  height: 24px;
+}
+.icon-unchecked {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -408px -348px;
+  width: 21px;
+  height: 20px;
+}
+.icon-vk-gr {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -714px -313px;
+  width: 31px;
+  height: 17px;
+}
+.icon-vk-hover-gr:hover {
+  background-image: url(/assets/img/sprite.png);
+  background-position: -683px -313px;
+  width: 31px;
+  height: 17px;
+}
+.icon-vk {
+  display: inline-block;
+  background-image: url(/assets/img/sprite.png);
+  background-position: -652px -313px;
+  width: 31px;
+  height: 17px;
+}
+.icon-vk_hover:hover {
+  display: inline-block;
+  background-image: url(/assets/img/sprite.png);
+  background-position: -621px -313px;
+  width: 31px;
+  height: 17px;
+}

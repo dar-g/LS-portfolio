@@ -1,0 +1,138 @@
+.background-text__portfolio {
+	position: absolute;	
+	top: 120px;
+	right: 420px;	
+}
+
+/* PHOTO, NAME */
+.about-content__container {
+	color: #fff;
+	text-align: center;
+	margin-bottom: 130px;
+	.about-content__name {
+		font-size: $title-size-text;
+	}
+}
+
+.about-content__arrow-down {
+	margin: 0 auto;
+	display: block;
+}
+
+/* TRIANGLE */
+.about-content__triangle {
+	.triangle-svg {
+		.triangle-svg-left {
+			fill: #efeee9;
+		}
+		.triangle-svg-right {
+			fill: #eeebdf;
+		}
+	}
+}
+
+/* CONTENT */
+.small-title {
+	font-family: $font-family-title;
+	font-size: 35px;
+	text-align: center;
+	line-height: 105px;
+	&:before {
+		content: "-";
+		font-size: 35px;
+		color: $decor-grey;
+		margin-right: 30px;
+	}
+	&:after {
+		content: "-";
+		font-size: 35px;
+		color: $decor-grey;
+		margin-left: 30px;
+	}
+}
+.content-about {
+	margin-top: -6px;
+	margin-bottom: 100px;
+	.content-about-left {
+		float: left;
+		width: 50%;
+		background: #efeee9;
+		position: relative;
+		min-height: 735px;
+			.big-title__about {
+				position: absolute;
+				left: 50px;
+				top: -20px;
+			}
+			.big-title {
+				width: 50%;
+				font-family: $font-family-title;
+				font-size: 63px;
+				margin-left: 150px;
+				&:before {
+					content: "-";
+					font-size: 63px;
+					color: $decor-grey;
+					margin-right: 20px;
+				}
+				&:after {
+					content: "-";
+					font-size: 63px;
+					color: $decor-grey;
+					margin-left: 20px;
+				}
+			}
+/* CONTENT LEFT */
+		.content-about-left__contents {
+			width: 50%;
+			float: right;
+				.content-about-left__photoframe {
+					width: 50%;
+					overflow: hidden;
+				}
+					.content-about-left__photo {
+						width: 100%;
+					}
+					.descr-p {
+						line-height: 24px;
+						font-family: $font-simple-text;
+					}
+		}
+	}
+/* CONTENT RIGHT */
+	.content-about-right {
+		min-height: 735px;
+		float: right;
+		width: 50%;
+		background: #eeebdf;
+	}
+}
+/* SKILLS */
+.skills-main-block {
+	.skills-main-list__item {
+		font-family: 'robotomedium';
+		font-size: 28px;
+		color: $dark-grey;
+	}
+}
+
+.skill-front__list, .skill-back__list, .skill-workflow__list{
+	font-size: 14px;
+	color: $green;
+}
+
+.skill-front__item, .skill-back__item, .skill-workflow__item{
+	display: inline-block;
+}
+
+/* CONTACTS */
+.contacts-block {
+	width: 380px;
+	height: 290px;
+	background-color: rgba(252, 252, 252, .8);
+	border-radius: $brad;
+	margin: 0 auto;
+		.contacts__link{
+			color: $dark-grey;
+		}
+}

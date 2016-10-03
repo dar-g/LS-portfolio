@@ -1,0 +1,21 @@
+.header-general{
+	margin: 15px 30px 80px;
+		.socials-header{
+			float: left;
+				.socials-header-list {
+					padding-left: 0;
+						.socials-header-item {
+							display: inline-block;
+							vertical-align: middle;
+							margin: 0 15px;
+								&:first-child {
+									margin-left: 0;
+								}
+						}
+				}
+		}
+	.hamburger-menu{
+		float: right;
+	}
+}
+

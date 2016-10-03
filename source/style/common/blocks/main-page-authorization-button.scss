@@ -1,0 +1,17 @@
+.main-page-authorization-button {
+	width: 180px;
+	height: 45px;
+	border: 1px solid #fff;
+	border-radius: $brad;
+	font-size: $size-simple-text;
+	line-height: 36px;
+	color: #fff;
+	background-color: transparent;
+	position: absolute;
+	top: 24px;
+	right: 45px;
+	&:hover{
+		background: #fff;
+		color: $green;
+	}
+}

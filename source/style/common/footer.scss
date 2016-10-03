@@ -1,0 +1,50 @@
+.footer-general {
+	background-color: rgba(55, 62, 66, .8);
+	width: 100%;
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 190px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+		.footer-upper {
+			border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+				.footer-upper-nav {
+					.footer-upper-nav__list {
+						padding-left: 0;
+						.footer-upper-nav__item {
+							display: inline-block;
+							margin: 0 20px;
+							line-height: 70px;
+							&:first-child {
+								margin-left: 30px;
+							}
+							.footer-upper-nav__link {
+								color: #fff;
+								&:hover {
+									color: rgba(255, 255, 255, .5);
+								}
+							}
+						}
+					}				
+				}
+			}
+		}
+		.footer-lower {
+			color: rgba(255, 255, 255, .5);
+			margin: 0 30px;
+			.footer-lower-descr__left {
+				display: block;
+				float: left;	
+			}
+			.footer-lower-descr__right {
+				display: block;
+				width: 25%;	
+				float: right;
+				text-align: right;
+			}
+
+}
+
+
+
+
