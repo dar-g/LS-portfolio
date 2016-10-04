@@ -14,6 +14,7 @@
 	}
 }
 
+/* ARROW DOWN */
 .about-content__arrow-down {
 	margin: 0 auto;
 	display: block;
@@ -31,7 +32,32 @@
 	}
 }
 
-/* CONTENT */
+/* -------- CONTENT -------- */
+.content-about {
+	@extend %clearfix;
+	margin-top: -6px;
+	margin-bottom: 100px;
+}
+
+/* TITLES & TEXT */
+.big-title {
+	width: 50%;
+	font-family: $font-family-title;
+	font-size: 63px;
+	margin-left: 150px;
+	&:before {
+		content: "-";
+		font-size: 63px;
+		color: $decor-grey;
+		margin-right: 20px;
+	}
+	&:after {
+		content: "-";
+		font-size: 63px;
+		color: $decor-grey;
+		margin-left: 20px;
+	}
+}
 .small-title {
 	font-family: $font-family-title;
 	font-size: 35px;
@@ -50,44 +76,26 @@
 		margin-left: 30px;
 	}
 }
-.content-about {
-	margin-top: -6px;
-	margin-bottom: 100px;
-	.content-about-left {
-		float: left;
-		width: 50%;
-		background: #efeee9;
-		position: relative;
-		min-height: 735px;
-			.big-title__about {
-				position: absolute;
-				left: 50px;
-				top: -20px;
-			}
-			.big-title {
-				width: 50%;
-				font-family: $font-family-title;
-				font-size: 63px;
-				margin-left: 150px;
-				&:before {
-					content: "-";
-					font-size: 63px;
-					color: $decor-grey;
-					margin-right: 20px;
-				}
-				&:after {
-					content: "-";
-					font-size: 63px;
-					color: $decor-grey;
-					margin-left: 20px;
-				}
-			}
-/* CONTENT LEFT */
+.descr{
+	color: $dark-grey;
+}
+/* -------- CONTENT LEFT -------- */
+.content-about-left {
+	float: left;
+	width: 920px;
+	background: #efeee9;
+	position: relative;
+	min-height: 735px;
+		.big-title__about {
+			position: absolute;
+			left: 50px;
+			top: -20px;
+		}
 		.content-about-left__contents {
 			width: 50%;
 			float: right;
 				.content-about-left__photoframe {
-					width: 50%;
+					width: 440px;
 					overflow: hidden;
 				}
 					.content-about-left__photo {
@@ -98,15 +106,18 @@
 						font-family: $font-simple-text;
 					}
 		}
-	}
-/* CONTENT RIGHT */
-	.content-about-right {
-		min-height: 735px;
-		float: right;
-		width: 50%;
-		background: #eeebdf;
-	}
 }
+/* -------- CONTENT RIGHT -------- */
+.content-about-right__wrapper{
+	margin: 0 30px;
+}
+.content-about-right {
+	min-height: 735px;
+	float: right;
+	width: 920px;
+	background: #eeebdf;
+}
+
 /* SKILLS */
 .skills-main-block {
 	.skills-main-list__item {
@@ -125,13 +136,15 @@
 	display: inline-block;
 }
 
-/* CONTACTS */
+/* -------- CONTACTS -------- */
 .contacts-block {
 	width: 380px;
 	height: 290px;
 	background-color: rgba(252, 252, 252, .8);
 	border-radius: $brad;
 	margin: 0 auto;
+	font-style: normal;
+	margin-bottom: 250px;
 		.contacts__link{
 			color: $dark-grey;
 		}
