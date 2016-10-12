@@ -1,0 +1,22 @@
+.sidebar {
+	width: 25%;
+	float: left;
+}
+
+.sidebar__list {
+	text-align: right;
+	.sidebar__item{
+		
+	}
+}
+.sidebar__link {
+	color: $dark-grey;
+	line-height: 26px;
+	&_active{
+		color: $green;
+		font-weight: bold;
+		&:after {
+			border-right: 2px solid $green;
+		}
+	}
+}

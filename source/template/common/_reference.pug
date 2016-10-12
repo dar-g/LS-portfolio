@@ -1,19 +1,25 @@
-.big-title
-	p.big-title__p Что обо мне говорят
-.quote-block
-	.quote-block-right
-		p.quote__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi explicabo modi eum doloremque maiores optio eaque impedit libero maxime animi, repudiandae natus officia quos rerum porro alias eius quia consequuntur.
-		.quote-block__photoframe
-			.quote-block__photo-1
-		.quote-name
-			p.quote-name__p Имя Фамилия
-		.quote-position
-			p.quote-position работает там-то
-	.quote-block-left
-		p.quote__p Hic dolor maxime reiciendis facere ipsum voluptas, cupiditate eveniet. Tenetur id, quae, et dicta provident esse inventore quos incidunt amet maiores excepturi praesentium pariatur culpa rem placeat laudantium...
-		.quote-block__photoframe
-			.quote-block__photo-2
-		.quote-name
-			p.quote-name__p Имя Фамилия
-		.quote-position
-			p.quote-position работает там-то
+.reference__wrapper
+	.reference__title
+		.big-title Что обо мне говорят
+	.quote-block
+		.quote-block-left
+			p.quote__p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+			.quote-block__photoframe
+				img.quote-block__photo(src="/assets/img/reference_ava_01.jpg" alt="photo1")
+			.quote__author-info
+				.quote-name
+					p.quote-name__p Дмитрий Ковальчук
+				.quote-position
+					p.quote-position Основатель Loftschool
+		.quote-block-right
+			p.quote__p Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+			.quote-block__photoframe
+				img.quote-block__photo(src="/assets/img/reference_ava_02.jpg" alt="photo2")
+			.quote__author-info
+				.quote-name
+					p.quote-name__p Зар Захаров
+				.quote-position
+					p.quote-position преподаватель
+
+	include ../common/_contact-block
+	a.works__arrow-up.icon.icon-arrow_down.icon-arrow_down-hover

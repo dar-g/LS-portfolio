@@ -1,0 +1,30 @@
+.blog-content {
+	float: right;
+	width: 70%;
+	padding-bottom: 200px;
+}
+.blog-content__list {}
+.blog-content__item {}
+.blog-content-article {}
+
+.small-title-p {
+	font-size: 35px;
+	font-family: $font-family-title;
+	color: $dark-grey;
+	text-align: left;
+}
+
+.article-date {
+	color: $green;
+	line-height: 41px;
+}
+.article {
+	border-bottom: 5px solid rgba(55, 62, 66, .07);
+	width: 681px;
+}
+.article__p {
+	padding-right: 50px;
+	line-height: 26px;
+}
+
+

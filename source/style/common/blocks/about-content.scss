@@ -1,121 +1,68 @@
-.background-text__portfolio {
-	position: absolute;	
-	top: 120px;
-	right: 420px;	
-}
-
-/* PHOTO, NAME */
-.about-content__container {
-	color: #fff;
-	text-align: center;
-	margin-bottom: 130px;
-	.about-content__name {
-		font-size: $title-size-text;
-	}
-}
-
-/* ARROW DOWN */
-.about-content__arrow-down {
-	margin: 0 auto;
-	display: block;
-}
-
-/* TRIANGLE */
-.about-content__triangle {
-	.triangle-svg {
-		.triangle-svg-left {
-			fill: #efeee9;
-		}
-		.triangle-svg-right {
-			fill: #eeebdf;
-		}
-	}
-}
-
 /* -------- CONTENT -------- */
 .content-about {
 	@extend %clearfix;
-	margin-top: -6px;
-	margin-bottom: 100px;
 }
 
-/* TITLES & TEXT */
-.big-title {
-	width: 50%;
-	font-family: $font-family-title;
-	font-size: 63px;
-	margin-left: 150px;
-	&:before {
-		content: "-";
-		font-size: 63px;
-		color: $decor-grey;
-		margin-right: 20px;
-	}
-	&:after {
-		content: "-";
-		font-size: 63px;
-		color: $decor-grey;
-		margin-left: 20px;
-	}
-}
-.small-title {
-	font-family: $font-family-title;
-	font-size: 35px;
-	text-align: center;
-	line-height: 105px;
-	&:before {
-		content: "-";
-		font-size: 35px;
-		color: $decor-grey;
-		margin-right: 30px;
-	}
-	&:after {
-		content: "-";
-		font-size: 35px;
-		color: $decor-grey;
-		margin-left: 30px;
-	}
-}
+/* TEXT */
 .descr{
 	color: $dark-grey;
 }
 /* -------- CONTENT LEFT -------- */
 .content-about-left {
 	float: left;
-	width: 920px;
+	width: 50%;
 	background: #efeee9;
 	position: relative;
 	min-height: 735px;
-		.big-title__about {
-			position: absolute;
-			left: 50px;
-			top: -20px;
+	padding-top: 50px;
+}
+
+.content-about-left__wrapper{
+	@extend %clearfix;
+}
+
+.content-about-left__title{
+	width: 45%;
+	float: left;
+}
+
+.big-title__about {
+	position: absolute;
+	left: 50px;
+	top: -20px;
+}
+
+.content-about-left__contents {
+	width: 45%;
+	float: right;
+	margin-right: 20px;
+		.content-about-left__photoframe {
+			max-width: 440px;
+			overflow: hidden;
 		}
-		.content-about-left__contents {
-			width: 50%;
-			float: right;
-				.content-about-left__photoframe {
-					width: 440px;
-					overflow: hidden;
-				}
-					.content-about-left__photo {
-						width: 100%;
-					}
-					.descr-p {
-						line-height: 24px;
-						font-family: $font-simple-text;
-					}
-		}
+			.content-about-left__photo {
+				width: 100%;
+			}
+}
+
+.descr-p {
+	line-height: 24px;
+	font-family: $font-simple-text;
 }
 /* -------- CONTENT RIGHT -------- */
 .content-about-right__wrapper{
 	margin: 0 30px;
+	.small-title {
+		@import 'common/titles';
+		line-height: 37px;
+	}
 }
 .content-about-right {
 	min-height: 735px;
 	float: right;
-	width: 920px;
+	width: 50%;
 	background: #eeebdf;
+	padding-top: 50px;
 }
 
 /* SKILLS */
@@ -134,18 +81,4 @@
 
 .skill-front__item, .skill-back__item, .skill-workflow__item{
 	display: inline-block;
-}
-
-/* -------- CONTACTS -------- */
-.contacts-block {
-	width: 380px;
-	height: 290px;
-	background-color: rgba(252, 252, 252, .8);
-	border-radius: $brad;
-	margin: 0 auto;
-	font-style: normal;
-	margin-bottom: 250px;
-		.contacts__link{
-			color: $dark-grey;
-		}
 }

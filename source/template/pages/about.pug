@@ -6,4 +6,20 @@ block variables
 block content
   include ../common/_header
   include ../common/_about-content
+  include ../common/_map-contacts
   include ../common/_footer
+  script.
+    function initMap() {
+    var kyiv = {lat: 50.449, lng: 30.523};
+    var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 12,
+    center: kyiv,
+    styles: [{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#e0efef"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"hue":"#1900ff"},{"color":"#c0e8e8"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"visibility":"on"},{"lightness":700}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#61dac9"}]}]
+    });
+    var marker = new google.maps.Marker({
+    position: kyiv,
+    map: map
+    });
+    }
+  script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBci6bkUq_vV3uE48HQM0CVpvSzellqaKA&callback=initMap')
+

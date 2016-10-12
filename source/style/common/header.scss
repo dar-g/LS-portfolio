@@ -1,21 +1,66 @@
 .header-general{
-	margin: 15px 30px 80px;
-		.socials-header{
-			float: left;
-				.socials-header-list {
-					padding-left: 0;
-						.socials-header-item {
-							display: inline-block;
-							vertical-align: middle;
-							margin: 0 15px;
-								&:first-child {
-									margin-left: 0;
-								}
+	background: url('/assets/img/mountain-bg_02.jpg') center top no-repeat;
+	background-size: cover;
+	min-height: 650px;
+	width: 100%;
+	position: relative;
+}
+
+.socials-hamb-container{
+	@extend %clearfix;
+	margin-bottom: 70px;
+}
+
+.socials-header{
+	float: left;
+		.socials-header-list {
+			padding-left: 0;
+				.socials-header-item {
+					display: inline-block;
+					vertical-align: middle;
+					margin: 0 15px;
+						&:first-child {
+							margin-left: 0;
 						}
 				}
 		}
-	.hamburger-menu{
-		float: right;
+}
+
+.hamburger-menu{
+	float: right;
+}
+
+.background-text__portfolio {
+	position: absolute;	
+	top: 70px;
+	right: 370px;
+}
+
+/* PHOTO, NAME */
+.about-content__container {
+	color: #fff;
+	text-align: center;
+	margin-bottom: 130px;
+	.about-content__name {
+		font-size: $title-size-text;
+	}
+}
+
+/* ARROW DOWN */
+.about-content__arrow-down {
+	margin: 0 auto;
+	display: block;
+}
+
+/* TRIANGLE */
+.about-content__triangle {
+	.triangle-svg {
+		.triangle-svg-left {
+			fill: #efeee9;
+		}
+		.triangle-svg-right {
+			fill: #eeebdf;
+		}
 	}
 }
 

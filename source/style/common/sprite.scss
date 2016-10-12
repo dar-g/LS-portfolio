@@ -11,170 +11,206 @@
 
 .icon-about_header {
   background-image: url(/assets/img/sprite.png);
-  background-position: 0px -313px;
+  background-position: -506px -313px;
   width: 357px;
   height: 125px;
 }
+.icon-arrow-gr_left {
+  background-image: url(sprite.png);
+  background-position: -893px -384px;
+  width: 18px;
+  height: 29px;
+}
+.icon-arrow-gr_right {
+  background-image: url(sprite.png);
+  background-position: -911px -384px;
+  width: 18px;
+  height: 29px;
+}
 .icon-arrow_down-hover:hover {
   background-image: url(/assets/img/sprite.png);
-  background-position: -771px -313px;
+  background-position: -992px -348px;
   width: 26px;
   height: 16px;
 }
 .icon-arrow_down {
   background-image: url(/assets/img/sprite.png);
-  background-position: -745px -313px;
+  background-position: -1018px -348px;
   width: 26px;
   height: 16px;
 }
+.icon-blog_header {
+  background-image: url(sprite.png);
+  background-position: 0px -478px;
+  width: 303px;
+  height: 208px;
+}
 .icon-checked {
   background-image: url(/assets/img/sprite.png);
-  background-position: -387px -348px;
+  background-position: -948px -384px;
   width: 21px;
   height: 20px;
 }
+.icon-cross {
+  background-image: url(sprite.png);
+  background-position: -863px -348px;
+  width: 36px;
+  height: 36px;
+}
 .icon-envelope {
   background-image: url(/assets/img/sprite.png);
-  background-position: -429px -348px;
+  background-position: -899px -365px;
   width: 23px;
   height: 17px;
 }
 .icon-github-gr {
   background-image: url(/assets/img/sprite.png);
-  background-position: -421px -313px;
+  background-position: -927px -313px;
   width: 26px;
   height: 22px;
 }
 .icon-github-hover-gr:hover {
   background-image: url(/assets/img/sprite.png);
-  background-position: -447px -313px;
+  background-position: -953px -313px;
   width: 26px;
   height: 22px;
 }
 .icon-github {
   display: inline-block;
   background-image: url(/assets/img/sprite.png);
-  background-position: -473px -313px;
+  background-position: -979px -313px;
   width: 26px;
   height: 22px;
 }
 .icon-github_hover:hover {
   display: inline-block;
   background-image: url(/assets/img/sprite.png);
-  background-position: -499px -313px;
+  background-position: -1005px -313px;
   width: 26px;
   height: 22px;
 }
 .icon-hamburger {
   display: inline-block;
   background-image: url(/assets/img/sprite.png);
-  background-position: -357px -313px;
+  background-position: -863px -313px;
   width: 40px;
   height: 35px;
 }
 .icon-in-gr {
   background-image: url(/assets/img/sprite.png);
-  background-position: -549px -313px;
+  background-position: -1055px -313px;
   width: 24px;
   height: 22px;
 }
 .icon-in {
   display: inline-block;
   background-image: url(/assets/img/sprite.png);
-  background-position: -573px -313px;
+  background-position: -1031px -313px;
   width: 24px;
   height: 22px;
 }
-.icon-in_hover-gr:hover {
-  background-image: url(/assets/img/sprite.png);
-  background-position: -597px -313px;
+.icon-in-gr_hover:hover {
+  background-image: url(sprite.png);
+  background-position: -1103px -313px;
   width: 24px;
   height: 22px;
 }
 .icon-in_hover:hover {
   display: inline-block;
   background-image: url(/assets/img/sprite.png);
-  background-position: -525px -313px;
+  background-position: -1079px -313px;
   width: 24px;
   height: 22px;
 }
 .icon-key {
   background-image: url(/assets/img/sprite.png);
-  background-position: -452px -348px;
+  background-position: -1158px -313px;
   width: 18px;
   height: 17px;
 }
 .icon-login-has-input {
   background-image: url(/assets/img/sprite.png);
-  background-position: -500px -348px;
+  background-position: -952px -365px;
   width: 15px;
   height: 17px;
 }
 .icon-login-no-input {
   background-image: url(/assets/img/sprite.png);
-  background-position: -485px -348px;
+  background-position: -937px -365px;
   width: 15px;
   height: 17px;
 }
 .icon-login {
   background-image: url(/assets/img/sprite.png);
-  background-position: -470px -348px;
+  background-position: -922px -365px;
   width: 15px;
   height: 17px;
 }
+.icon-map-marker-sm {
+  background-image: url(sprite.png);
+  background-position: -929px -384px;
+  width: 19px;
+  height: 24px;
+}
 .icon-map_marker {
-  background-image: url(/assets/img/sprite.png);
-  background-position: -357px -348px;
+  background-image: url(sprite.png);
+  background-position: -863px -384px;
   width: 30px;
   height: 40px;
 }
 .icon-phone {
-  background-image: url(/assets/img/sprite.png);
-  background-position: -387px -368px;
+  background-image: url(sprite.png);
+  background-position: -990px -384px;
   width: 19px;
   height: 18px;
 }
 .icon-portfolio_header {
-  background-image: url(/assets/img/sprite.png);
+  background-image: url(sprite.png);
   background-position: 0px 0px;
   width: 1176px;
   height: 313px;
 }
 .icon-skype {
-  background-image: url(/assets/img/sprite.png);
-  background-position: -397px -313px;
+  background-image: url(sprite.png);
+  background-position: -903px -313px;
   width: 24px;
   height: 24px;
 }
 .icon-unchecked {
-  background-image: url(/assets/img/sprite.png);
-  background-position: -408px -348px;
+  background-image: url(sprite.png);
+  background-position: -969px -384px;
   width: 21px;
   height: 20px;
 }
 .icon-vk-gr {
   background-image: url(/assets/img/sprite.png);
-  background-position: -714px -313px;
+  background-position: -930px -348px;
   width: 31px;
   height: 17px;
 }
 .icon-vk-hover-gr:hover {
   background-image: url(/assets/img/sprite.png);
-  background-position: -683px -313px;
+  background-position: -899px -348px;
   width: 31px;
   height: 17px;
 }
 .icon-vk {
   display: inline-block;
   background-image: url(/assets/img/sprite.png);
-  background-position: -652px -313px;
+  background-position: -1127px -313px;
   width: 31px;
   height: 17px;
 }
 .icon-vk_hover:hover {
   display: inline-block;
   background-image: url(/assets/img/sprite.png);
-  background-position: -621px -313px;
+  background-position: -961px -348px;
   width: 31px;
   height: 17px;
+}
+.icon-works_header {
+  background-image: url(sprite.png);
+  background-position: 0px -313px;
+  width: 506px;
+  height: 165px;
 }

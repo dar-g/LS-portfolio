@@ -1,22 +1,24 @@
 block variables
 
 doctype html
-html
+html(lang="ru-RU")
   head
     meta(charset="utf-8")
     title #{title}
     meta(content="" name="author")
     meta(content="" name="description")
     meta(content="" name="keywords")
-    meta(content="width=1830px, initial-scale=1" name="viewport")
+    meta(content="width=device-width, initial-scale=1" name="viewport")
     meta(content="ie=edge" http-equiv="x-ua-compatible")
 
     //- favicon block start
+    link(rel='shortcut icon', type='image/x-icon', href='favicon.ico')
     //- favicon block end
 
     link(rel='stylesheet' href='/assets/css/foundation.css')
-    link(rel='stylesheet' href='/assets/css/app.css')
     link(rel='stylesheet' href='/assets/css/fonts.css')
+    //- link(rel='stylesheet' href='/assets/css/sprite.css')
+    link(rel='stylesheet' href='/assets/css/app.css')
     script(src='/assets/js/foundation.js' defer)
     script(src='/assets/js/app.js' defer)
 

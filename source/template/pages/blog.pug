@@ -4,14 +4,7 @@ block variables
 	- var title = 'Blog page'
 
 block content
-	include ../common/_header
-		.about-author-block
-			.about-author-photoframe
-				img.about-author__photo(src="/assets/img/photo-500.jpg" alt="photo")
-		.big-title
-			p.big-title__p БЛОГ
-		.small-title
-				p.small-title-p Статьи, которые я написала
+	include ../common/_header-blog
 	include ../common/_blog-sidebar
 	include ../common/_blog-content
 	include ../common/_footer

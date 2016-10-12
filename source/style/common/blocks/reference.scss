@@ -1,0 +1,75 @@
+.reference__wrapper {
+	width: 100%;
+	min-height: 1140px;
+	background: url('/assets/img/bg.png') center top no-repeat;
+	background-size: cover;
+}
+
+.reference__title {
+	position: relative;
+	margin: 0 auto;
+	background: url('/assets/img/about_header.png') center no-repeat;
+	height: 210px;
+}
+
+.big-title {
+	width: 100%;
+	line-height: 210px;
+}
+
+.quote-block {
+	@extend %clearfix;
+	width: 780px;
+	min-height: 240px;
+	margin: 0 auto 70px;
+}
+
+.quote-block-left {
+	float: left;
+	width: 45%;
+}
+
+.quote-block-right {
+	float: right;
+	width: 45%;
+}
+
+.quote__p {
+	line-height: 26px;
+	color: $dark-grey;
+		&:before {
+			content: "“";
+			display: block;
+			font-family: $font-quote;
+			font-size: 95px;
+			color: rgba(55, 62, 66, .2);
+		}
+}
+
+.quote-block__photoframe {
+	display: inline-block;
+	vertical-align: middle;
+	width: 78px;
+	height: 78px;
+	border-radius: 50% 50%;
+	overflow: hidden;
+	margin-right: 25px;
+}
+
+.quote__author-info {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.quote-block__photo {
+	width: 100%;
+}
+
+.quote-name {
+	color: $green;
+	font-weight: bold;
+}
+
+.quote-position {
+	color: $green;
+}

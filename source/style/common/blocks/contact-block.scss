@@ -1,0 +1,75 @@
+.contact-block {
+	width: 380px;
+	height: 437px;
+	margin: 0 auto 70px;
+	border-radius: $brad;
+	background: rgba(252, 252, 252, .7);
+}
+
+.small-title {
+	color: $dark-grey;
+}
+
+.contact-form__name, .contact-form__mail, .contact-form__message {
+	margin-bottom: 20px;
+	padding: 0 20px;
+}
+
+.contact-form__name-input, .contact-form__mail-input {
+	width: 340px;
+	height: 45px;
+}
+
+.contact-form__name-input, .contact-form__mail-input, .contact-form__message-input {
+	border-radius: $brad;
+	border: none;
+	padding: 0 18px;
+	box-sizing: border-box;
+}
+
+.contact-form__message-input {
+	width: 340px;
+	height: 140px;
+	resize: none;
+	padding: 18px;
+}
+
+.contact-form__btn-wrapper {
+	width: 100%;
+	@extend %clearfix;
+}
+
+.contact-form__submit, .contact-form__reset {
+	color: #fff;
+	width: 50%;
+	min-height: 39px;
+	border-style: none;
+	background: $green;
+	opacity: .7;
+	cursor: pointer;
+		&:hover {
+			background: rgba(0, 150, 136, .7)
+		}
+		&:first-child {
+			border-radius: 0 0 0 $brad;
+			border-right: 2px solid #fff;
+			border-right: 2px solid #fff;
+		}
+		&:nth-child(2) {
+			border-radius: 0 0 $brad 0;
+		}
+}
+
+.contact-form__submit {
+	float: left;
+}
+
+.contact-form__reset {
+	float: right;
+}
+
+.works__arrow-up {
+	display: block;
+	margin: 0 auto;
+	transform: rotate(180deg);
+}

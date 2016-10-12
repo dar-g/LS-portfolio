@@ -2,6 +2,8 @@
 @import 'common/fonts';
 @import 'common/sprite';
 @import 'common/clearfix';
+@import 'common/container';
+@import 'common/titles';
 
 /* BEM Blocks */
 @import 'common/blocks/avatar';
@@ -16,11 +18,15 @@
 /* About Page */
 @import 'common/about';
 
+/* Blog Page */
+@import 'common/blog';
+
+/* Works Page */
+@import 'common/works';
+
 html {
 	position: relative;
     min-height: 100%;
-    background: url(/assets/img/mountain-bg_01.jpg) 0 0 no-repeat;
-    background-size: cover;
 }
 
 body {
@@ -36,6 +42,6 @@ ul {
 a, button {
 	cursor: pointer;
 	text-decoration: none;
+	outline-style: none;
 }
-
 
