@@ -1,5 +1,5 @@
 .header-general{
-	background: url('/assets/img/mountain-bg_02.jpg') center top no-repeat;
+	background: url('/assets/img/bg/mountain-bg_02.jpg') center top no-repeat;
 	background-size: cover;
 	min-height: 650px;
 	width: 100%;
@@ -30,17 +30,12 @@
 	float: right;
 }
 
-.background-text__portfolio {
-	position: absolute;	
-	top: 70px;
-	right: 370px;
-}
-
 /* PHOTO, NAME */
 .about-content__container {
 	color: #fff;
 	text-align: center;
-	margin-bottom: 130px;
+	margin: 0 auto 130px;
+    background: url(/assets/img/bg/portfolio_header.png) center no-repeat;
 	.about-content__name {
 		font-size: $title-size-text;
 	}
