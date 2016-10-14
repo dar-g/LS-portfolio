@@ -1,404 +1,175 @@
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
+.socials-item{
+	display: inline-block;
+	margin: 10px;
 }
 
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-$icon-arrow-gr-left-name: 'icon-arrow-gr_left';
-$icon-arrow-gr-left-x: 120px;
-$icon-arrow-gr-left-y: 17px;
-$icon-arrow-gr-left-offset-x: -120px;
-$icon-arrow-gr-left-offset-y: -17px;
-$icon-arrow-gr-left-width: 18px;
-$icon-arrow-gr-left-height: 29px;
-$icon-arrow-gr-left-total-width: 151px;
-$icon-arrow-gr-left-total-height: 143px;
-$icon-arrow-gr-left-image: 'sprite.png';
-$icon-arrow-gr-left: (120px, 17px, -120px, -17px, 18px, 29px, 151px, 143px, 'sprite.png', 'icon-arrow-gr_left', );
-$icon-arrow-gr-right-name: 'icon-arrow-gr_right';
-$icon-arrow-gr-right-x: 120px;
-$icon-arrow-gr-right-y: 46px;
-$icon-arrow-gr-right-offset-x: -120px;
-$icon-arrow-gr-right-offset-y: -46px;
-$icon-arrow-gr-right-width: 18px;
-$icon-arrow-gr-right-height: 29px;
-$icon-arrow-gr-right-total-width: 151px;
-$icon-arrow-gr-right-total-height: 143px;
-$icon-arrow-gr-right-image: 'sprite.png';
-$icon-arrow-gr-right: (120px, 46px, -120px, -46px, 18px, 29px, 151px, 143px, 'sprite.png', 'icon-arrow-gr_right', );
-$icon-arrow-down-name: 'icon-arrow_down';
-$icon-arrow-down-x: 93px;
-$icon-arrow-down-y: 93px;
-$icon-arrow-down-offset-x: -93px;
-$icon-arrow-down-offset-y: -93px;
-$icon-arrow-down-width: 26px;
-$icon-arrow-down-height: 16px;
-$icon-arrow-down-total-width: 151px;
-$icon-arrow-down-total-height: 143px;
-$icon-arrow-down-image: 'sprite.png';
-$icon-arrow-down: (93px, 93px, -93px, -93px, 26px, 16px, 151px, 143px, 'sprite.png', 'icon-arrow_down', );
-$icon-arrow-down-hover-name: 'icon-arrow_down_hover';
-$icon-arrow-down-hover-x: 0px;
-$icon-arrow-down-hover-y: 110px;
-$icon-arrow-down-hover-offset-x: 0px;
-$icon-arrow-down-hover-offset-y: -110px;
-$icon-arrow-down-hover-width: 26px;
-$icon-arrow-down-hover-height: 16px;
-$icon-arrow-down-hover-total-width: 151px;
-$icon-arrow-down-hover-total-height: 143px;
-$icon-arrow-down-hover-image: 'sprite.png';
-$icon-arrow-down-hover: (0px, 110px, 0px, -110px, 26px, 16px, 151px, 143px, 'sprite.png', 'icon-arrow_down_hover', );
-$icon-checked-name: 'icon-checked';
-$icon-checked-x: 96px;
-$icon-checked-y: 44px;
-$icon-checked-offset-x: -96px;
-$icon-checked-offset-y: -44px;
-$icon-checked-width: 21px;
-$icon-checked-height: 20px;
-$icon-checked-total-width: 151px;
-$icon-checked-total-height: 143px;
-$icon-checked-image: 'sprite.png';
-$icon-checked: (96px, 44px, -96px, -44px, 21px, 20px, 151px, 143px, 'sprite.png', 'icon-checked', );
-$icon-cross-name: 'icon-cross';
-$icon-cross-x: 0px;
-$icon-cross-y: 35px;
-$icon-cross-offset-x: 0px;
-$icon-cross-offset-y: -35px;
-$icon-cross-width: 36px;
-$icon-cross-height: 36px;
-$icon-cross-total-width: 151px;
-$icon-cross-total-height: 143px;
-$icon-cross-image: 'sprite.png';
-$icon-cross: (0px, 35px, 0px, -35px, 36px, 36px, 151px, 143px, 'sprite.png', 'icon-cross', );
-$icon-envelope-name: 'icon-envelope';
-$icon-envelope-x: 0px;
-$icon-envelope-y: 126px;
-$icon-envelope-offset-x: 0px;
-$icon-envelope-offset-y: -126px;
-$icon-envelope-width: 23px;
-$icon-envelope-height: 17px;
-$icon-envelope-total-width: 151px;
-$icon-envelope-total-height: 143px;
-$icon-envelope-image: 'sprite.png';
-$icon-envelope: (0px, 126px, 0px, -126px, 23px, 17px, 151px, 143px, 'sprite.png', 'icon-envelope', );
-$icon-github-gr-name: 'icon-github-gr';
-$icon-github-gr-x: 70px;
-$icon-github-gr-y: 22px;
-$icon-github-gr-offset-x: -70px;
-$icon-github-gr-offset-y: -22px;
-$icon-github-gr-width: 26px;
-$icon-github-gr-height: 22px;
-$icon-github-gr-total-width: 151px;
-$icon-github-gr-total-height: 143px;
-$icon-github-gr-image: 'sprite.png';
-$icon-github-gr: (70px, 22px, -70px, -22px, 26px, 22px, 151px, 143px, 'sprite.png', 'icon-github-gr', );
-$icon-github-gr-hover-name: 'icon-github-gr_hover';
-$icon-github-gr-hover-x: 70px;
-$icon-github-gr-hover-y: 44px;
-$icon-github-gr-hover-offset-x: -70px;
-$icon-github-gr-hover-offset-y: -44px;
-$icon-github-gr-hover-width: 26px;
-$icon-github-gr-hover-height: 22px;
-$icon-github-gr-hover-total-width: 151px;
-$icon-github-gr-hover-total-height: 143px;
-$icon-github-gr-hover-image: 'sprite.png';
-$icon-github-gr-hover: (70px, 44px, -70px, -44px, 26px, 22px, 151px, 143px, 'sprite.png', 'icon-github-gr_hover', );
-$icon-github-name: 'icon-github';
-$icon-github-x: 0px;
-$icon-github-y: 71px;
-$icon-github-offset-x: 0px;
-$icon-github-offset-y: -71px;
-$icon-github-width: 26px;
-$icon-github-height: 22px;
-$icon-github-total-width: 151px;
-$icon-github-total-height: 143px;
-$icon-github-image: 'sprite.png';
-$icon-github: (0px, 71px, 0px, -71px, 26px, 22px, 151px, 143px, 'sprite.png', 'icon-github', );
-$icon-github-hover-name: 'icon-github_hover';
-$icon-github-hover-x: 70px;
-$icon-github-hover-y: 0px;
-$icon-github-hover-offset-x: -70px;
-$icon-github-hover-offset-y: 0px;
-$icon-github-hover-width: 26px;
-$icon-github-hover-height: 22px;
-$icon-github-hover-total-width: 151px;
-$icon-github-hover-total-height: 143px;
-$icon-github-hover-image: 'sprite.png';
-$icon-github-hover: (70px, 0px, -70px, 0px, 26px, 22px, 151px, 143px, 'sprite.png', 'icon-github_hover', );
-$icon-hamburger-name: 'icon-hamburger';
-$icon-hamburger-x: 0px;
-$icon-hamburger-y: 0px;
-$icon-hamburger-offset-x: 0px;
-$icon-hamburger-offset-y: 0px;
-$icon-hamburger-width: 40px;
-$icon-hamburger-height: 35px;
-$icon-hamburger-total-width: 151px;
-$icon-hamburger-total-height: 143px;
-$icon-hamburger-image: 'sprite.png';
-$icon-hamburger: (0px, 0px, 0px, 0px, 40px, 35px, 151px, 143px, 'sprite.png', 'icon-hamburger', );
-$icon-in-gr-name: 'icon-in-gr';
-$icon-in-gr-x: 26px;
-$icon-in-gr-y: 71px;
-$icon-in-gr-offset-x: -26px;
-$icon-in-gr-offset-y: -71px;
-$icon-in-gr-width: 24px;
-$icon-in-gr-height: 22px;
-$icon-in-gr-total-width: 151px;
-$icon-in-gr-total-height: 143px;
-$icon-in-gr-image: 'sprite.png';
-$icon-in-gr: (26px, 71px, -26px, -71px, 24px, 22px, 151px, 143px, 'sprite.png', 'icon-in-gr', );
-$icon-in-gr-hover-name: 'icon-in-gr_hover';
-$icon-in-gr-hover-x: 50px;
-$icon-in-gr-hover-y: 71px;
-$icon-in-gr-hover-offset-x: -50px;
-$icon-in-gr-hover-offset-y: -71px;
-$icon-in-gr-hover-width: 24px;
-$icon-in-gr-hover-height: 22px;
-$icon-in-gr-hover-total-width: 151px;
-$icon-in-gr-hover-total-height: 143px;
-$icon-in-gr-hover-image: 'sprite.png';
-$icon-in-gr-hover: (50px, 71px, -50px, -71px, 24px, 22px, 151px, 143px, 'sprite.png', 'icon-in-gr_hover', );
-$icon-in-name: 'icon-in';
-$icon-in-x: 96px;
-$icon-in-y: 0px;
-$icon-in-offset-x: -96px;
-$icon-in-offset-y: 0px;
-$icon-in-width: 24px;
-$icon-in-height: 22px;
-$icon-in-total-width: 151px;
-$icon-in-total-height: 143px;
-$icon-in-image: 'sprite.png';
-$icon-in: (96px, 0px, -96px, 0px, 24px, 22px, 151px, 143px, 'sprite.png', 'icon-in', );
-$icon-in-hover-name: 'icon-in_hover';
-$icon-in-hover-x: 96px;
-$icon-in-hover-y: 22px;
-$icon-in-hover-offset-x: -96px;
-$icon-in-hover-offset-y: -22px;
-$icon-in-hover-width: 24px;
-$icon-in-hover-height: 22px;
-$icon-in-hover-total-width: 151px;
-$icon-in-hover-total-height: 143px;
-$icon-in-hover-image: 'sprite.png';
-$icon-in-hover: (96px, 22px, -96px, -22px, 24px, 22px, 151px, 143px, 'sprite.png', 'icon-in_hover', );
-$icon-key-name: 'icon-key';
-$icon-key-x: 23px;
-$icon-key-y: 126px;
-$icon-key-offset-x: -23px;
-$icon-key-offset-y: -126px;
-$icon-key-width: 18px;
-$icon-key-height: 17px;
-$icon-key-total-width: 151px;
-$icon-key-total-height: 143px;
-$icon-key-image: 'sprite.png';
-$icon-key: (23px, 126px, -23px, -126px, 18px, 17px, 151px, 143px, 'sprite.png', 'icon-key', );
-$icon-login-has-input-name: 'icon-login-has-input';
-$icon-login-has-input-x: 41px;
-$icon-login-has-input-y: 126px;
-$icon-login-has-input-offset-x: -41px;
-$icon-login-has-input-offset-y: -126px;
-$icon-login-has-input-width: 15px;
-$icon-login-has-input-height: 17px;
-$icon-login-has-input-total-width: 151px;
-$icon-login-has-input-total-height: 143px;
-$icon-login-has-input-image: 'sprite.png';
-$icon-login-has-input: (41px, 126px, -41px, -126px, 15px, 17px, 151px, 143px, 'sprite.png', 'icon-login-has-input', );
-$icon-login-no-input-name: 'icon-login-no-input';
-$icon-login-no-input-x: 71px;
-$icon-login-no-input-y: 126px;
-$icon-login-no-input-offset-x: -71px;
-$icon-login-no-input-offset-y: -126px;
-$icon-login-no-input-width: 15px;
-$icon-login-no-input-height: 17px;
-$icon-login-no-input-total-width: 151px;
-$icon-login-no-input-total-height: 143px;
-$icon-login-no-input-image: 'sprite.png';
-$icon-login-no-input: (71px, 126px, -71px, -126px, 15px, 17px, 151px, 143px, 'sprite.png', 'icon-login-no-input', );
-$icon-login-name: 'icon-login';
-$icon-login-x: 56px;
-$icon-login-y: 126px;
-$icon-login-offset-x: -56px;
-$icon-login-offset-y: -126px;
-$icon-login-width: 15px;
-$icon-login-height: 17px;
-$icon-login-total-width: 151px;
-$icon-login-total-height: 143px;
-$icon-login-image: 'sprite.png';
-$icon-login: (56px, 126px, -56px, -126px, 15px, 17px, 151px, 143px, 'sprite.png', 'icon-login', );
-$icon-map-marker-sm-name: 'icon-map-marker-sm';
-$icon-map-marker-sm-x: 120px;
-$icon-map-marker-sm-y: 75px;
-$icon-map-marker-sm-offset-x: -120px;
-$icon-map-marker-sm-offset-y: -75px;
-$icon-map-marker-sm-width: 19px;
-$icon-map-marker-sm-height: 24px;
-$icon-map-marker-sm-total-width: 151px;
-$icon-map-marker-sm-total-height: 143px;
-$icon-map-marker-sm-image: 'sprite.png';
-$icon-map-marker-sm: (120px, 75px, -120px, -75px, 19px, 24px, 151px, 143px, 'sprite.png', 'icon-map-marker-sm', );
-$icon-map-marker-name: 'icon-map_marker';
-$icon-map-marker-x: 40px;
-$icon-map-marker-y: 0px;
-$icon-map-marker-offset-x: -40px;
-$icon-map-marker-offset-y: 0px;
-$icon-map-marker-width: 30px;
-$icon-map-marker-height: 40px;
-$icon-map-marker-total-width: 151px;
-$icon-map-marker-total-height: 143px;
-$icon-map-marker-image: 'sprite.png';
-$icon-map-marker: (40px, 0px, -40px, 0px, 30px, 40px, 151px, 143px, 'sprite.png', 'icon-map_marker', );
-$icon-phone-name: 'icon-phone';
-$icon-phone-x: 74px;
-$icon-phone-y: 71px;
-$icon-phone-offset-x: -74px;
-$icon-phone-offset-y: -71px;
-$icon-phone-width: 19px;
-$icon-phone-height: 18px;
-$icon-phone-total-width: 151px;
-$icon-phone-total-height: 143px;
-$icon-phone-image: 'sprite.png';
-$icon-phone: (74px, 71px, -74px, -71px, 19px, 18px, 151px, 143px, 'sprite.png', 'icon-phone', );
-$icon-skype-name: 'icon-skype';
-$icon-skype-x: 40px;
-$icon-skype-y: 40px;
-$icon-skype-offset-x: -40px;
-$icon-skype-offset-y: -40px;
-$icon-skype-width: 24px;
-$icon-skype-height: 24px;
-$icon-skype-total-width: 151px;
-$icon-skype-total-height: 143px;
-$icon-skype-image: 'sprite.png';
-$icon-skype: (40px, 40px, -40px, -40px, 24px, 24px, 151px, 143px, 'sprite.png', 'icon-skype', );
-$icon-unchecked-name: 'icon-unchecked';
-$icon-unchecked-x: 96px;
-$icon-unchecked-y: 64px;
-$icon-unchecked-offset-x: -96px;
-$icon-unchecked-offset-y: -64px;
-$icon-unchecked-width: 21px;
-$icon-unchecked-height: 20px;
-$icon-unchecked-total-width: 151px;
-$icon-unchecked-total-height: 143px;
-$icon-unchecked-image: 'sprite.png';
-$icon-unchecked: (96px, 64px, -96px, -64px, 21px, 20px, 151px, 143px, 'sprite.png', 'icon-unchecked', );
-$icon-vk-gr-name: 'icon-vk-gr';
-$icon-vk-gr-x: 0px;
-$icon-vk-gr-y: 93px;
-$icon-vk-gr-offset-x: 0px;
-$icon-vk-gr-offset-y: -93px;
-$icon-vk-gr-width: 31px;
-$icon-vk-gr-height: 17px;
-$icon-vk-gr-total-width: 151px;
-$icon-vk-gr-total-height: 143px;
-$icon-vk-gr-image: 'sprite.png';
-$icon-vk-gr: (0px, 93px, 0px, -93px, 31px, 17px, 151px, 143px, 'sprite.png', 'icon-vk-gr', );
-$icon-vk-gr-hover-name: 'icon-vk-gr_hover';
-$icon-vk-gr-hover-x: 120px;
-$icon-vk-gr-hover-y: 0px;
-$icon-vk-gr-hover-offset-x: -120px;
-$icon-vk-gr-hover-offset-y: 0px;
-$icon-vk-gr-hover-width: 31px;
-$icon-vk-gr-hover-height: 17px;
-$icon-vk-gr-hover-total-width: 151px;
-$icon-vk-gr-hover-total-height: 143px;
-$icon-vk-gr-hover-image: 'sprite.png';
-$icon-vk-gr-hover: (120px, 0px, -120px, 0px, 31px, 17px, 151px, 143px, 'sprite.png', 'icon-vk-gr_hover', );
-$icon-vk-name: 'icon-vk';
-$icon-vk-x: 62px;
-$icon-vk-y: 93px;
-$icon-vk-offset-x: -62px;
-$icon-vk-offset-y: -93px;
-$icon-vk-width: 31px;
-$icon-vk-height: 17px;
-$icon-vk-total-width: 151px;
-$icon-vk-total-height: 143px;
-$icon-vk-image: 'sprite.png';
-$icon-vk: (62px, 93px, -62px, -93px, 31px, 17px, 151px, 143px, 'sprite.png', 'icon-vk', );
-$icon-vk-hover-name: 'icon-vk_hover';
-$icon-vk-hover-x: 31px;
-$icon-vk-hover-y: 93px;
-$icon-vk-hover-offset-x: -31px;
-$icon-vk-hover-offset-y: -93px;
-$icon-vk-hover-width: 31px;
-$icon-vk-hover-height: 17px;
-$icon-vk-hover-total-width: 151px;
-$icon-vk-hover-total-height: 143px;
-$icon-vk-hover-image: 'sprite.png';
-$icon-vk-hover: (31px, 93px, -31px, -93px, 31px, 17px, 151px, 143px, 'sprite.png', 'icon-vk_hover', );
-$spritesheet-width: 151px;
-$spritesheet-height: 143px;
-$spritesheet-image: 'sprite.png';
-$spritesheet-sprites: ($icon-arrow-gr-left, $icon-arrow-gr-right, $icon-arrow-down, $icon-arrow-down-hover, $icon-checked, $icon-cross, $icon-envelope, $icon-github-gr, $icon-github-gr-hover, $icon-github, $icon-github-hover, $icon-hamburger, $icon-in-gr, $icon-in-gr-hover, $icon-in, $icon-in-hover, $icon-key, $icon-login-has-input, $icon-login-no-input, $icon-login, $icon-map-marker-sm, $icon-map-marker, $icon-phone, $icon-skype, $icon-unchecked, $icon-vk-gr, $icon-vk-gr-hover, $icon-vk, $icon-vk-hover, );
-$spritesheet: (151px, 143px, 'sprite.png', $spritesheet-sprites, );
-
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
 .icon {
   display: inline-block;
+  background-image: url(/assets/img/sprite.png);
 }
 
-// HTML
-<i class="icon icon-home"></i>
-*/
-@mixin sprite-width($sprite) {
-  width: nth($sprite, 5);
+.icon-icon-arrow-gr_left {
+  background-position: -142px -46px;
+  width: 18px;
+  height: 29px;
 }
-
-@mixin sprite-height($sprite) {
-  height: nth($sprite, 6);
+.icon-icon-arrow-gr_right {
+  background-position: -142px -17px;
+  width: 18px;
+  height: 29px;
 }
-
-@mixin sprite-position($sprite) {
-  $sprite-offset-x: nth($sprite, 3);
-  $sprite-offset-y: nth($sprite, 4);
-  background-position: $sprite-offset-x  $sprite-offset-y;
+.icon-icon-arrow_down {
+  background-position: 0px -129px;
+  width: 26px;
+  height: 16px;
 }
-
-@mixin sprite-image($sprite) {
-  $sprite-image: nth($sprite, 9);
-  background-image: url(#{$sprite-image});
+.icon-icon-arrow_down_hover:hover {
+  background-position: -26px -129px;
+  width: 26px;
+  height: 16px;
 }
-
-@mixin sprite($sprite) {
-  @include sprite-image($sprite);
-  @include sprite-position($sprite);
-  @include sprite-width($sprite);
-  @include sprite-height($sprite);
+.icon-icon-checked {
+  background-position: -112px -86px;
+  width: 21px;
+  height: 20px;
 }
-
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
-@mixin sprites($sprites) {
-  @each $sprite in $sprites {
-    $sprite-name: nth($sprite, 10);
-    .#{$sprite-name} {
-      @include sprite($sprite);
-    }
-  }
+.icon-icon-cross {
+  background-position: 0px -35px;
+  width: 36px;
+  height: 36px;
+}
+.icon-icon-envelope {
+  background-position: 0px -145px;
+  width: 23px;
+  height: 17px;
+}
+.icon-icon-github-gr {
+  background-position: -112px -64px;
+  width: 26px;
+  height: 22px;
+}
+.icon-icon-github-gr_hover:hover{
+  background-position: -76px -36px;
+  width: 26px;
+  height: 22px;
+}
+.icon-icon-github-round {
+  background-position: -40px 0px;
+  width: 36px;
+  height: 36px;
+}
+.icon-icon-github {
+  background-position: -36px -71px;
+  width: 26px;
+  height: 22px;
+}
+.icon-icon-github_hover:hover {
+  background-position: -40px -36px;
+  width: 26px;
+  height: 22px;
+}
+.icon-icon-hamburger {
+  background-position: 0px 0px;
+  width: 40px;
+  height: 35px;
+}
+.icon-icon-in-gr {
+  background-position: -86px -71px;
+  width: 24px;
+  height: 22px;
+}
+.icon-icon-in-gr_hover:hover {
+  background-position: -62px -71px;
+  width: 24px;
+  height: 22px;
+}
+.icon-icon-in-round {
+  background-position: 0px -71px;
+  width: 36px;
+  height: 36px;
+}
+.icon-icon-in {
+  background-position: -24px -107px;
+  width: 24px;
+  height: 22px;
+}
+.icon-icon-in_hover:hover {
+  background-position: 0px -107px;
+  width: 24px;
+  height: 22px;
+}
+.icon-icon-key {
+  background-position: -173px -37px;
+  width: 18px;
+  height: 17px;
+}
+.icon-icon-link {
+  background-position: -173px 0px;
+  width: 20px;
+  height: 19px;
+}
+.icon-icon-login-has-input {
+  background-position: -173px -71px;
+  width: 15px;
+  height: 17px;
+}
+.icon-icon-login-no-input {
+  background-position: -173px -88px;
+  width: 15px;
+  height: 17px;
+}
+.icon-icon-login {
+  background-position: -173px -54px;
+  width: 15px;
+  height: 17px;
+}
+.icon-icon-map-marker-sm {
+  background-position: -142px -75px;
+  width: 19px;
+  height: 24px;
+}
+.icon-icon-map_marker {
+  background-position: -112px 0px;
+  width: 30px;
+  height: 40px;
+}
+.icon-icon-phone {
+  background-position: -173px -19px;
+  width: 19px;
+  height: 18px;
+}
+.icon-icon-skype {
+  background-position: -112px -40px;
+  width: 24px;
+  height: 24px;
+}
+.icon-icon-unchecked {
+  background-position: -142px -99px;
+  width: 21px;
+  height: 20px;
+}
+.icon-icon-vk-gr {
+  background-position: -142px 0px;
+  width: 31px;
+  height: 17px;
+}
+.icon-icon-vk-gr_hover:hover {
+  background-position: -79px -107px;
+  width: 31px;
+  height: 17px;
+}
+.icon-icon-vk-round {
+  background-position: -76px 0px;
+  width: 36px;
+  height: 36px;
+}
+.icon-icon-vk {
+  background-position: -110px -107px;
+  width: 31px;
+  height: 17px;
+}
+.icon-icon-vk_hover:hover {
+  background-position: -48px -107px;
+  width: 31px;
+  height: 17px;
 }

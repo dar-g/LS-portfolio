@@ -1,23 +1,21 @@
 header.header-general
-	.container
-		.socials-hamb-container
-			.socials-header
-				ul.socials-header-list
-					li.socials-header-item
-						a.socials-header-item__link.icon.icon-vk.icon-vk_hover(href="https://vk.com/kunitsa_koldunitsa" target="_blank")
-					li.socials-header-item
-						a.socials-header-item__link.icon.icon-github.icon-github_hover(href="https://github.com/dar-g" target="_blank")
-					li.socials-header-item
-						a.socials-header-item__link.icon.icon-in.icon-in_hover(href="https://www.linkedin.com/" target="_blank")
-			menu.hamburger-menu
-				a.hamburger-menu__link.icon-hamburger(href="#")
+	.socials-hamb-container
+		.socials-header
+			ul.socials-header-list
+				li.socials-header-item
+					a.socials-header-item__link.icon.icon-icon-vk.icon-icon-vk_hover(href="https://vk.com/kunitsa_koldunitsa" target="_blank")
+				li.socials-header-item
+					a.socials-header-item__link.icon.icon-icon-github.icon-icon-github_hover(href="https://github.com/dar-g" target="_blank")
+				li.socials-header-item
+					a.socials-header-item__link.icon.icon-icon-in.icon-icon-in_hover(href="https://www.linkedin.com/" target="_blank")
+		menu.hamburger-menu
+			a.hamburger-menu__link.icon.icon-icon-hamburger(href="#")
 
-		.background-text__blog.icon-blog_header
-		.about-content__container
-			include ../common/_avatar
-			p.big-title БЛОГ
-			p.blog-descr Статьи, которые я написала
-		a.about-content__arrow-down.icon.icon-arrow_down.icon-arrow_down-hover
+	.blog-content__container
+		include ../common/_avatar
+		.big-title БЛОГ
+		.blog-descr Статьи, которые я написала
+	a.about-content__arrow-down.icon.icon-arrow_down.icon-arrow_down-hover
 
 	.blog__triangle
 		include ../common/_triangle

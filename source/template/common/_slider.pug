@@ -1,24 +1,31 @@
-.slider-works
-	.big-title
-		p.big-title__p Мои работы
-	ul.slider-works__list
-		li.slider-works__item
-			img.slider-works__pic.project-1(src="" alt="project#1 screenshot")
-		li.slider-works__item
-			img.slider-works__pic.project-2(src="" alt="project#2 screenshot")
-		li.slider-works__item
-			img.slider-works__pic.project-3(src="" alt="project#3 screenshot")
-	ul.slider-works-switch__list
-		li.slider-works-switch__item.project-1
-		li.slider-works-switch__item.project-2
-		li.slider-works-switch__item.project-3
-	ul.slider-works-descr__list
-		li.slider-works-descr__item.small-title-p.project-1 Название проекта 1
-			p.slider-works-descr__p html, css, javascript
-			a.slider-works-descr__link.project-1
-		li.slider-works-descr__item.small-title-p.project-2 Название проекта 2
-			p.slider-works-descr__p html, css, javascript
-			a.slider-works-descr__link.project-2
-		li.slider-works-descr__item.small-title-p.project-3 Название проекта 3
-			p.slider-works-descr__p html, css, javascript
-			a.slider-works-descr__link.project-3
+.slider
+	.slider__title-wrapper
+		.big-title Мои работы
+	.slider__wrapper
+		a.slider__left-arrow.icon.icon-icon-arrow-gr_right
+		ul.slider__list
+			li.slider__item.project-1
+				.slider__pic-wrapper
+					img.slider__pic(src="/assets/img/bg/work-1.png" alt="project#1 screenshot")
+				include _slider-switch
+				.slider-descr
+					.slider__small-title Сайт школы онлайн образования
+					p.slider-descr__p html, css, javascript
+					a.slider__link Посмотреть сайт
+			li.slider__item.project-2
+				.slider__pic-wrapper
+					img.slider__pic(src="/assets/img/bg/work-2.png" alt="project#2 screenshot")
+				include _slider-switch
+				.slider-descr
+					.slider__small-title Название проекта 2
+					p.slider-descr__p html, css, javascript
+					a.slider__link Посмотреть сайт
+			li.slider__item.project-3
+				.slider__pic-wrapper
+					img.slider__pic(src="/assets/img/bg/work-3.png" alt="project#3 screenshot")
+				include _slider-switch
+				.slider-descr
+					.slider__small-title Название проекта 3
+					p.slider-descr__p html, css, javascript
+					a.slider__link Посмотреть сайт
+		a.slider__right-arrow.icon.icon-icon-arrow-gr_left

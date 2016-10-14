@@ -1,0 +1,97 @@
+.slider {
+	background: #f0efe9;
+}
+
+.slider__title-wrapper {
+	height: 185px;
+	background: url('/assets/img/bg/works_header.png') center top no-repeat #faf8f0;
+	margin-top: -20px;
+		.big-title {
+			line-height: 185px;
+		}
+}
+
+.slider__wrapper {
+	margin: 0 auto;
+	width: 1740px;
+}
+
+.slider__left-arrow, .slider__right-arrow {
+	display: inline-block;
+	vertical-align: top;
+	margin: 300px 30px 0;
+}
+
+.slider__right-arrow {}
+
+.slider__list {
+	display: inline-block;
+}
+.slider__item {}
+.slider__pic-wrapper, .slider-switch__list, .slider-descr {
+	display: inline-block;
+}
+
+.slider-switch__list {
+	margin-right: 125px;
+	vertical-align: bottom;
+}
+
+.slider-switch__item {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.slider-switch__link {
+	display: block;
+	width: 7px;
+	height: 7px;
+	background: #fff;
+	border: 2px solid $green;
+	border-radius: 50%;
+		&.active {
+			background: $green;
+		}
+}
+
+.slider-descr {
+	width: 425px;
+	height: 258px;
+	text-align: left;
+	vertical-align: top;
+	margin-top: 250px;
+}
+
+.slider__small-title {
+	font-family: $font-family-title;
+	font-size: 35px;
+	color: $dark-grey;
+}
+
+.slider-descr__p {
+	display: block;
+	border-top: 1px solid $green;
+	border-bottom: 1px solid $green;
+	text-transform: uppercase;
+	color: $green;
+	line-height: 45px;
+	margin: 40px 0;
+}
+
+.slider__link {
+	display: block;
+	width: 199px;
+	height: 46px;
+	color: #fff;
+	background: $green;
+	border-radius: 	$brad;
+	text-align: center;
+	line-height: 46px;
+}
+
+.project-2, .project-3 {
+	display: none;
+}
+
+
+

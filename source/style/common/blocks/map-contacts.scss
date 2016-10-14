@@ -22,12 +22,19 @@
 			color: $dark-grey;
 			display: inline-block;
 			line-height: 35px;
+				&:hover {
+					text-decoration: underline;
+				}
 		}
+}
+.contacts__list {
+	margin-left: 40px;
 }
 .icon__wrapper {
 	display: inline-block;
 	vertical-align: middle;
 	width: 30px;
+	margin-right: 10px;
 		.icon {
 			display: inline-block;
 			vertical-align: middle;

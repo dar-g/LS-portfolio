@@ -7,46 +7,68 @@
     height: 150px;
 	border-bottom: 2px solid $border-color;
 	line-height: 24px;
-		.footer-upper {
-			border-bottom: 2px solid $border-color;
-				.footer-upper-nav {
-					.footer-upper-nav__list {
-						padding-left: 0;
-						.footer-upper-nav__item {
-							display: inline-block;
-							margin: 0 20px;
-							&:first-child {
-								margin-left: 30px;
-							}
-							.footer-upper-nav__link {
-								color: #fff;
-								&:hover {
-									color: rgba(255, 255, 255, .5);
-								}
-							}
-						}
-					}				
-				}
-			}
-		}
-		.footer-lower {
-			color: rgba(255, 255, 255, .5);
-			margin: 0 30px;
-				.footer-lower-descr{
-					@extend %clearfix;
-				}
-					.footer-lower-descr__left {
-						display: block;
-						float: left;
-						width: 500px;
-					}
-					.footer-lower-descr__right {
-						display: block;
-						float: right;
-						text-align: right;
-						width: 500px;
-					}
+}
 
+.footer-upper {
+	border-bottom: 2px solid $border-color;
+	@extend %clearfix;
+}
+
+.footer-upper-nav {
+	width: 45%;
+	float: left;
+}
+
+.footer-upper-nav__list {
+	padding-left: 0;
+	.footer-upper-nav__item {
+		display: inline-block;
+		margin: 0 20px;
+		&:first-child {
+			margin-left: 30px;
+		}
+	}
+}
+
+.footer-upper-nav__link {
+	color: #fff;
+	&:hover {
+		color: rgba(255, 255, 255, .5);
+	}
+}
+
+/*SOCIALS*/
+.socials-footer {
+	margin: 0 30px;
+}
+
+.socials-footer__item {
+	display: inline-block;
+	float: right;
+	margin: 0 5px 5px;
+}
+
+/*LOWER FOOTER*/
+.footer-lower {
+	color: rgba(255, 255, 255, .5);
+	margin: 0 30px;
+}
+
+.footer-lower-descr{
+	@extend %clearfix;
+}
+
+.footer-lower-descr__left {
+	display: block;
+	float: left;
+	width: 500px;
+}
+
+.footer-lower-descr__right {
+	display: block;
+	float: right;
+	text-align: right;
+	width: 500px;
 }
 
 
