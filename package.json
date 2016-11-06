@@ -28,6 +28,6 @@
     "rimraf": "2.5.2"
   },
   "dependencies": {
-    "normalize.css": "^4.1.1"
+    "normalize.css": "^4.2.0"
   }
 }

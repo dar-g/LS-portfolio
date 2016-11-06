@@ -4,6 +4,9 @@
 @import 'common/clearfix';
 @import 'common/container';
 @import 'common/titles';
+@import 'common/adaptive';
+@import 'common/adaptive-pages';
+
 
 /* BEM Blocks */
 @import 'common/blocks/avatar';
@@ -23,6 +26,9 @@
 
 /* Works Page */
 @import 'common/works';
+
+
+@import 'common/adaptive-pages';
 
 html {
 	position: relative;

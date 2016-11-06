@@ -6,7 +6,10 @@
 
 
 .blog__triangle {
-	.triangle-svg-left, .triangle-svg-right {
-		fill: #fff;
+	.triangle-svg {
+		display: block;
+		.triangle-svg-left, .triangle-svg-right {
+			fill: #fff;
+		}
 	}
 }
