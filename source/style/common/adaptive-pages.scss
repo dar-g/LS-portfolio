@@ -1,0 +1,51 @@
+/* ----- WELCOME PAGE ADAPTIVE ----- */
+.main-page-authorization-button {
+	@include respond-to('xs')
+    {
+		font-size: 14px;
+		width: 145px;
+		height: 38px;
+		top: 10px;
+		right: 90px;
+    }
+}
+
+.main-page-widget-container {
+	@include respond-to('med') 
+	{
+		font-size: 14px; 
+		width: 300px;
+	}
+}
+
+.about-widget {
+	@include respond-to('med')
+	{
+		&__navigation-item {
+			font-size: 14px;
+			&:first-child {
+				width: 127px;
+			}
+			&:nth-child(2) {
+				width: 99px;
+			}
+			&:nth-child(3) {
+				width: 75px;
+			}
+		}
+	}
+}
+
+.main-page-footer {
+	@include respond-to('med')
+	{
+		height: 50px;
+	}
+	.main-page-footer__copyright {
+		@include respond-to('med')
+		{
+			font-size: 14px;
+			line-height: 24px;
+		}
+	}
+}
